@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite" class="">
+
+<header>
+    <div class="container flex__between flex__wrap">
+        <div class="head__logo" itemscope itemtype="http://schema.org/Organization">
+            <a itemprop="url" href="/" class="flex__center">
+                <img itemprop="logo" src="/images/logo.png" alt="logo">
+            </a>
+            <meta itemprop="name" content="NAME">
+            <meta itemprop="address" content="ADDRESS">
+            <meta itemprop="telephone" content="TELEPHONE">
+        </div>
+        <nav class="head__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="flex__wrap" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                <li class="menu-item-has-children" itemprop="itemListElement">
+                    <a href="/blog.html" itemprop="url">Все тесты</a>
+                    <meta itemprop="name" content="Все тесты"/>
+                    <ul itemscope="" itemtype="http://schema.org/ItemList">
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="1">
+                            <a href="#" itemprop="url">Личность и характер (12)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="2">
+                            <a href="#" itemprop="url">Интелектуальные (7)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="3">
+                            <a href="#" itemprop="url">Для детей (12)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="4">
+                            <a href="#" itemprop="url">Темперамент (18)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="5">
+                            <a href="#" itemprop="url">Темперамент (18)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="6">
+                            <a href="#" itemprop="url">Темперамент (18)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="7">
+                            <a href="#" itemprop="url">Образовательные (9)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="8">
+                            <a href="#" itemprop="url">Образовательные (9)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="9">
+                            <a href="#" itemprop="url">Образовательные (9)</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="10">
+                            <a href="#" itemprop="url">Развлекательные</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="11">
+                            <a href="#" itemprop="url">Развлекательные</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="12">
+                            <a href="#" itemprop="url">Развлекательные</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="13">
+                            <a href="#" itemprop="url">Профориентация</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="14">
+                            <a href="#" itemprop="url">Профориентация</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                        <li itemprop="itemListElement">
+                            <meta itemprop="position" content="15s">
+                            <a href="#" itemprop="url">Профориентация</a>
+                            <meta itemprop="name" content="Главная"/>
+                        </li>
+                    </ul>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Блог</a>
+                    <meta itemprop="name" content="Блог"/>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Контакты</a>
+                    <meta itemprop="name" content="Контакты"/>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Ч.В.З.</a>
+                    <meta itemprop="name" content="Ч.В.З."/>
+                </li>
+            </ul>
+        </nav>
+        <div class="js__full__menu">
+            <span class="fas fa-ellipsis-h"></span>
+            <nav class="head__nav__sub flex"></nav>
+        </div>
+        <form action="/" class="head__form flex__center">
+            <input type="text" class="head__search" placeholder="Поиск">
+            <span class="fas fa-search"></span>
+        </form>
+        <div class="head__btn__wrap flex__center">
+            <a href="#" class="head__pro__btn flex">
+                <div class="hexagon bg__purple"></div>
+                <span>Подключить Pro</span>
+            </a>
+            <div class="head__lang__wrap">
+                <span class="head__lang__active">
+                    <img src="./images/rus.png" alt="">
+                </span>
+                <ul class="head__lang__list flex">
+                    <li><a href="#"><img src="./images/uk.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/china.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/ger.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="head__login__btn flex__center is-label">
+                <span class="far fa-user flex__center"></span>
+
+                <div class="login__menu__wrap column">
+                    <div class="login__menu__info flex">
+                        <div class="login__menu__icon flex__center">
+                            <span class="far fa-user"></span>
+                            <img src="./images/medal.png" alt="" class="label__medal">
+                        </div>
+                        <div class="flex__wrap">
+                            <span class="login__menu__name">Мария Петрова</span>
+                            <span class="login__menu__status">Новичок</span>
+                            <div class="login__menu__pro flex">
+                                <div class="hexagon bg__yellow"></div>
+                                Pro
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="flex__wrap" itemscope="" itemtype="http://schema.org/ItemList">
+                        <li class="check" itemprop="itemListElement">
+                            <a href="#" itemprop="url">Мой прогресс</a>
+                            <meta itemprop="name" content="Главная"/>
+                            <meta itemprop="position" content="1">
+                        </li>
+                        <li class="mark" itemprop="itemListElement">
+                            <a href="#" itemprop="url">Закладки</a>
+                            <meta itemprop="name" content="Главная"/>
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li class="cart" itemprop="itemListElement">
+                            <a href="#" itemprop="url">Магазин</a>
+                            <meta itemprop="name" content="Главная"/>
+                            <meta itemprop="position" content="3">
+                        </li>
+                        <li class="cog is-active" itemprop="itemListElement">
+                            <a href="#" itemprop="url">Настройки</a>
+                            <meta itemprop="name" content="Главная"/>
+                            <meta itemprop="position" content="4">
+                        </li>
+                        <li class="exit" itemprop="itemListElement">
+                            <a href="#" itemprop="url">Выход</a>
+                            <meta itemprop="name" content="Главная"/>
+                            <meta itemprop="position" content="5">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="my__hamburger">
+            <div class="hamburger__block">
+                <div class="hamburger__top"></div>
+                <div class="hamburger__bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sub__menu">
+        <div class="container flex">
+            <div class="sub__menu__nav column">
+                <span class="sub__menu__title"></span>
+            </div>
+            <div class="sub__menu__banner column">
+                <span class="sub__menu__title">Узнать больше <br>с планом Pro</span>
+                <p>Получите доступ к результатам более 1500 авторских тестов</p>
+                <a href="#">Подключить Pro</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg__white">
+    <div class="container">
+
+        <div class="breadcrumb__wrap">
+            <ul class="breadcrumb__list flex" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope=""
+                    itemtype="https://schema.org/ListItem">
+                    <a href="#" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope=""
+                    itemtype="https://schema.org/ListItem">
+                    <a href="#" itemprop="item">
+                        <span itemprop="name">Словарь</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ul>
+        </div>
+
+         <div class="title__img__wrap flex__between bg__purple bg__right" style="background-image: url('./images/books.png')">
+            <div class="column">
+                <h1 class="h1">Словарь</h1>
+                <p>Здесь Вы можете найти интересующие психологические термины или имя автора!</p>
+                <form action="/" class="alfabet__form head__form flex__center">
+                    <input type="text" class="head__search" placeholder="Поиск">
+                    <span class="fas fa-search"></span>
+                </form>
+                <div class="alfabet__list__nav">
+                    <ul class="flex flex__wrap">
+                        <li><a href="#А" rel="nofollow">А</a></li>
+                        <li><a href="#Б" rel="nofollow">Б</a></li>
+                        <li><a href="#В" rel="nofollow">В</a></li>
+                        <li><a href="#Г" rel="nofollow">Г</a></li>
+                        <li><a href="#Д" rel="nofollow">Д</a></li>
+                        <li><a href="#Ж" rel="nofollow">Ж</a></li>
+                        <li><a href="#З" rel="nofollow">З</a></li>
+                        <li><a href="#И" rel="nofollow">И</a></li>
+                        <li><a href="#Й" rel="nofollow">Й</a></li>
+                        <li><a href="#К" rel="nofollow">К</a></li>
+                        <li><a href="#Л" rel="nofollow">Л</a></li>
+                        <li><a href="#М" rel="nofollow">М</a></li>
+                        <li><a href="#Н" rel="nofollow">Н</a></li>
+                        <li><a href="#О" rel="nofollow">О</a></li>
+                        <li><a href="#П" rel="nofollow">П</a></li>
+                        <li><a href="#Р" rel="nofollow">Р</a></li>
+                        <li><a href="#С" rel="nofollow">С</a></li>
+                        <li><a href="#Т" rel="nofollow">Т</a></li>
+                        <li><a href="#У" rel="nofollow">У</a></li>
+                        <li><a href="#Ф" rel="nofollow">Ф</a></li>
+                        <li><a href="#Х" rel="nofollow">Х</a></li>
+                        <li><a href="#Ц" rel="nofollow">Ц</a></li>
+                        <li><a href="#Ч" rel="nofollow">Ч</a></li>
+                        <li><a href="#Ш" rel="nofollow">Ш</a></li>
+                        <li><a href="#Щ" rel="nofollow">Щ</a></li>
+                        <li><a href="#Ъ" rel="nofollow">Ъ</a></li>
+                        <li><a href="#Ы" rel="nofollow">Ы</a></li>
+                        <li><a href="#Ь" rel="nofollow">Ь</a></li>
+                        <li><a href="#Э" rel="nofollow">Э</a></li>
+                        <li><a href="#Ю" rel="nofollow">Ю</a></li>
+                        <li><a href="#Я" rel="nofollow">Я</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul class="alfabet__list__wrap">
+            <li class="flex alfabet__list__simbol" id="А"><span class="alfabet__list__name">А</span>
+                <ol class="alfabet__list__word">
+                    <li
+                            data-name="Абсолютная шкала"
+                            data-desc="<p>Стремление какой-н. общественной группы к главенстующей роли в чёмн.</p>
+                            <p>Общее название разных течений в искусстве 20 в., отходящих от реализмы и ищущих новые формы художественного выражения.</p>
+                            <p>| прил. авангардистский, ая, ое. Толковый словарь Ожегова и Шведовой</p>"
+                            data-link="/alphabet-single.html"
+                    ><a href="https://proftest.me/term-absolute-scale" title="Прочесть значение термина «Абсолютная шкала»">Абсолютная шкала</a>
+                    </li>
+                    <li
+                            data-name="Абсолютный порог"
+                            data-desc="<p>Стремление какой-н. общественной группы к главенстующей роли в чёмн.</p>
+                            <p>Общее название разных течений в искусстве 20 в., отходящих от реализмы и ищущих новые формы художественного выражения.</p>
+                            <p>| прил. авангардистский, ая, ое. Толковый словарь Ожегова и Шведовой</p>"
+                            data-link="/alphabet-single.html"
+                    ><a href="https://proftest.me/term-absolute-threshold"
+                                            title="Прочесть значение термина «Абсолютный порог»">Абсолютный порог</a>
+                    </li>
+                    <li
+                            data-name="Абстинентный синдром, абстинеция"
+                            data-desc="<p>Стремление какой-н. общественной группы к главенстующей роли в чёмн.</p>
+                            <p>Общее название разных течений в искусстве 20 в., отходящих от реализмы и ищущих новые формы художественного выражения.</p>
+                            <p>| прил. авангардистский, ая, ое. Толковый словарь Ожегова и Шведовой</p>"
+                            data-link="/alphabet-single.html"
+                    ><a href="https://proftest.me/term-abstinence-syndrome"
+                                            title="Прочесть значение термина «Абстинентный синдром, абстинеция»">Абстинентный
+                        синдром, абстинеция</a></li>
+                    <li><a href="https://proftest.me/term-abstracting"
+                                            title="Прочесть значение термина «Абстрагирование»">Абстрагирование</a></li>
+                    <li><a href="https://proftest.me/term-abstraction"
+                                            title="Прочесть значение термина «Абстракция»">Абстракция</a></li>
+                    <li><a href="https://proftest.me/term-inverse-therapy"
+                                            title="Прочесть значение термина «Аверсивная терапия»">Аверсивная
+                        терапия</a></li>
+                    <li><a href="https://proftest.me/term-self-identification"
+                                            title="Прочесть значение термина «Автоидентификация, аутоидентификация»">Автоидентификация,
+                        аутоидентификация</a></li>
+                    <li><a href="https://proftest.me/term-automatism"
+                                            title="Прочесть значение термина «Автоматизм»">Автоматизм</a></li>
+                    <li><a href="https://proftest.me/term-automorphic-perception"
+                                            title="Прочесть значение термина «Автоморфное восприятие»">Автоморфное
+                        восприятие</a></li>
+                    <li><a href="https://proftest.me/term-autonomy"
+                                            title="Прочесть значение термина «Автономия»">Автономия</a></li>
+                    <li><a href="https://proftest.me/term-telegraphic-speech"
+                                            title="Прочесть значение термина «Автономная (или малая) речь»">Автономная
+                        (или малая) речь</a></li>
+                    <li><a href="https://proftest.me/term-autonomic-nervous-system"
+                                            title="Прочесть значение термина «Автономная нервная система»">Автономная
+                        нервная система</a></li>
+                    <li><a href="https://proftest.me/term-abstract"
+                                            title="Прочесть значение термина «Автореферат»">Автореферат</a></li>
+                    <li><a href="https://proftest.me/term-authoritarian-personality"
+                                            title="Прочесть значение термина «Авторитарная личность»">Авторитарная
+                        личность</a></li>
+                    <li><a href="https://proftest.me/term-authoritarianism"
+                                            title="Прочесть значение термина «Авторитарность»">Авторитарность</a></li>
+                    <li><a href="https://proftest.me/term-autophilia"
+                                            title="Прочесть значение термина «Автофилия»">Автофилия</a></li>
+                    <li><a href="https://proftest.me/term-a-ha-experience"
+                                            title="Прочесть значение термина «Ага-переживание»">Ага-переживание</a></li>
+                    <li><a href="https://proftest.me/term-munchausen-syndrome"
+                                            title="Прочесть значение термина «Агасфера синдром»">Агасфера синдром</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-aggravation"
+                                            title="Прочесть значение термина «Аггравация»">Аггравация</a></li>
+                    <li><a href="https://proftest.me/term-agnosia"
+                                            title="Прочесть значение термина «Агнозия»">Агнозия</a></li>
+                    <li><a href="https://proftest.me/term-visual-agnosia"
+                                            title="Прочесть значение термина «Агнозия зрительная»">Агнозия
+                        зрительная</a></li>
+                    <li><a href="https://proftest.me/term-auditory-agnosia"
+                                            title="Прочесть значение термина «Агнозия слуховая»">Агнозия слуховая</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-tactile-agnosia"
+                                            title="Прочесть значение термина «Агнозия тактильная»">Агнозия
+                        тактильная</a></li>
+                    <li><a href="https://proftest.me/term-agonistic-behavior"
+                                            title="Прочесть значение термина «Агонистическое поведение»">Агонистическое
+                        поведение</a></li>
+                    <li><a href="https://proftest.me/term-agoraphobia"
+                                            title="Прочесть значение термина «Агорафобия»">Агорафобия</a></li>
+                    <li><a href="https://proftest.me/term-agramatism"
+                                            title="Прочесть значение термина «Аграмматизм»">Аграмматизм</a></li>
+                    <li><a href="https://proftest.me/term-agraphia"
+                                            title="Прочесть значение термина «Аграфия»">Аграфия</a></li>
+                    <li><a href="https://proftest.me/term-aggression"
+                                            title="Прочесть значение термина «Агрессия»">Агрессия</a></li>
+                    <li><a href="https://proftest.me/term-adaptation-syndrome"
+                                            title="Прочесть значение термина «Адаптационный синдром»">Адаптационный
+                        синдром</a></li>
+                    <li><a href="https://proftest.me/term-adaptation"
+                                            title="Прочесть значение термина «Адаптация»">Адаптация</a></li>
+                    <li><a href="https://proftest.me/term-social-adaptation"
+                                            title="Прочесть значение термина «Адаптация социальная»">Адаптация
+                        социальная</a></li>
+                    <li><a href="https://proftest.me/term-addictive-behavior"
+                                            title="Прочесть значение термина «Аддиктивное поведение»">Аддиктивное
+                        поведение</a></li>
+                    <li><a href="https://proftest.me/term-addiction"
+                                            title="Прочесть значение термина «Аддикция»">Аддикция</a></li>
+                    <li><a href="https://proftest.me/term-adequacy-of-sensation-perception"
+                                            title="Прочесть значение термина «Адекватность ощущения (восприятия)»">Адекватность
+                        ощущения (восприятия)</a></li>
+                    <li><a href="https://proftest.me/term-adipsia"
+                                            title="Прочесть значение термина «Адипсия»">Адипсия</a></li>
+                    <li><a href="https://proftest.me/term-alfred-adler"
+                                            title="Прочесть значение термина «Адлер, Альфред»">Адлер, Альфред</a></li>
+                    <li><a href="https://proftest.me/term-adrenalin"
+                                            title="Прочесть значение термина «Адреналин»">Адреналин</a></li>
+                    <li><a href="https://proftest.me/term-acalculia"
+                                            title="Прочесть значение термина «Акалькулия»">Акалькулия</a></li>
+                    <li><a href="https://proftest.me/term-acclimation"
+                                            title="Прочесть значение термина «Акклимация»">Акклимация</a></li>
+                    <li><a href="https://proftest.me/term-accommodation"
+                                            title="Прочесть значение термина «Аккомодация»">Аккомодация</a></li>
+                    <li><a href="https://proftest.me/term-acculturation"
+                                            title="Прочесть значение термина «Аккультурация»">Аккультурация</a></li>
+                    <li><a href="https://proftest.me/term-acme"
+                                            title="Прочесть значение термина «Акме»">Акме</a></li>
+                    <li><a href="https://proftest.me/term-acmeology"
+                                            title="Прочесть значение термина «Акмеология»">Акмеология</a></li>
+                    <li><a href="https://proftest.me/term-acceleration"
+                                            title="Прочесть значение термина «Акселерация»">Акселерация</a></li>
+                    <li><a href="https://proftest.me/term-axon"
+                                            title="Прочесть значение термина «Аксон»">Аксон</a></li>
+                    <li><a href="https://proftest.me/term-activation"
+                                            title="Прочесть значение термина «Активация»">Активация</a></li>
+                    <li><a href="https://proftest.me/term-actualization"
+                                            title="Прочесть значение термина «Актуализация»">Актуализация</a></li>
+                    <li><a href="https://proftest.me/term-character-accentuation"
+                                            title="Прочесть значение термина «Акцентуация характера»">Акцентуация
+                        характера</a></li>
+                    <li><a href="https://proftest.me/term-accidentalism"
+                                            title="Прочесть значение термина «Акцидентализм»">Акцидентализм</a></li>
+                    <li><a href="https://proftest.me/term-alalia"
+                                            title="Прочесть значение термина «Алалия»">Алалия</a></li>
+                    <li><a href="https://proftest.me/term-alateen"
+                                            title="Прочесть значение термина «Алатин»">Алатин</a></li>
+                    <li><a href="https://proftest.me/term-algometer"
+                                            title="Прочесть значение термина «Алгометр»">Алгометр</a></li>
+                    <li><a href="https://proftest.me/term-alexithymia"
+                                            title="Прочесть значение термина «Алекситимия»">Алекситимия</a></li>
+                    <li><a href="https://proftest.me/term-alexia"
+                                            title="Прочесть значение термина «Алексия»">Алексия</a></li>
+                    <li><a href="https://proftest.me/term-altruism"
+                                            title="Прочесть значение термина «Альтруизм»">Альтруизм</a></li>
+                    <li><a href="https://proftest.me/term-ambivalence"
+                                            title="Прочесть значение термина «Амбивалентность»">Амбивалентность</a></li>
+                    <li><a href="https://proftest.me/term-ambivert"
+                                            title="Прочесть значение термина «Амбиверт»">Амбиверт</a></li>
+                    <li><a href="https://proftest.me/term-ambidextria"
+                                            title="Прочесть значение термина «Амбидекстрия»">Амбидекстрия</a></li>
+                    <li><a href="https://proftest.me/term-ambition"
+                                            title="Прочесть значение термина «Амбиция»">Амбиция</a></li>
+                    <li><a href="https://proftest.me/term-amblyopia"
+                                            title="Прочесть значение термина «Амблиопия»">Амблиопия</a></li>
+                    <li><a href="https://proftest.me/term-american-sign-language"
+                                            title="Прочесть значение термина «Американский язык жестов»">Американский
+                        язык жестов</a></li>
+                    <li><a href="https://proftest.me/term-bonhomie"
+                                            title="Прочесть значение термина «Амикошонство»">Амикошонство</a></li>
+                    <li><a href="https://proftest.me/term-amimia-hypomimia"
+                                            title="Прочесть значение термина «Амимия (гипомимия)»">Амимия
+                        (гипомимия)</a></li>
+                    <li><a href="https://proftest.me/term-amnesia"
+                                            title="Прочесть значение термина «Амнезия»">Амнезия</a></li>
+                    <li><a href="https://proftest.me/term-infantile-amnesia"
+                                            title="Прочесть значение термина «Амнезия инфантильная»">Амнезия
+                        инфантильная</a></li>
+                    <li><a href="https://proftest.me/term-amusia"
+                                            title="Прочесть значение термина «Амузия»">Амузия</a></li>
+                    <li><a href="https://proftest.me/term-anagram"
+                                            title="Прочесть значение термина «Анаграмма»">Анаграмма</a></li>
+                    <li><a href="https://proftest.me/term-anaclitic-depression"
+                                            title="Прочесть значение термина «Анаклитическая депрессия»">Анаклитическая
+                        депрессия</a></li>
+                    <li><a href="https://proftest.me/term-analysis"
+                                            title="Прочесть значение термина «Анализ»">Анализ</a></li>
+                    <li><a href="https://proftest.me/term-analyzer"
+                                            title="Прочесть значение термина «Анализатор»">Анализатор</a></li>
+                    <li><a href="https://proftest.me/term-analytic-psychology"
+                                            title="Прочесть значение термина «Аналитическая психология»">Аналитическая
+                        психология</a></li>
+                    <li><a href="https://proftest.me/term-analogy"
+                                            title="Прочесть значение термина «Аналогия»">Аналогия</a></li>
+                    <li><a href="https://proftest.me/term-anal-stage"
+                                            title="Прочесть значение термина «Анальная стадия»">Анальная стадия</a></li>
+                    <li><a href="https://proftest.me/term-anamnesis"
+                                            title="Прочесть значение термина «Анамнез»">Анамнез</a></li>
+                    <li><a href="https://proftest.me/term-ananyev-boris-gerasimovich"
+                                            title="Прочесть значение термина «Ананьев, Борис Герасимович»">Ананьев,
+                        Борис Герасимович</a></li>
+                    <li><a href="https://proftest.me/term-anarthria"
+                                            title="Прочесть значение термина «Анартрия»">Анартрия</a></li>
+                    <li><a href="https://proftest.me/term-anhedonia"
+                                            title="Прочесть значение термина «Ангедония»">Ангедония</a></li>
+                    <li><a href="https://proftest.me/term-androgyny"
+                                            title="Прочесть значение термина «Андрогиния»">Андрогиния</a></li>
+                    <li><a href="https://proftest.me/term-androphilia"
+                                            title="Прочесть значение термина «Андрофилия»">Андрофилия</a></li>
+                    <li><a href="https://proftest.me/term-questionnare"
+                                            title="Прочесть значение термина «Анкета»">Анкета</a></li>
+                    <li><a href="https://proftest.me/term-survey-research"
+                                            title="Прочесть значение термина «Анкетный опрос»">Анкетный опрос</a></li>
+                    <li><a href="https://proftest.me/term-neurotic-anorexia"
+                                            title="Прочесть значение термина «Анорексия невротическая»">Анорексия
+                        невротическая</a></li>
+                    <li><a href="https://proftest.me/term-anosmia"
+                                            title="Прочесть значение термина «Аносмия»">Аносмия</a></li>
+                    <li><a href="https://proftest.me/term-anokhin-pyotr-kuzmich"
+                                            title="Прочесть значение термина «Анохин, Петр Кузьмич»">Анохин, Петр
+                        Кузьмич</a></li>
+                    <li><a href="https://proftest.me/term-antidepressants"
+                                            title="Прочесть значение термина «Антидепрессанты»">Антидепрессанты</a></li>
+                    <li><a href="https://proftest.me/term-anthropogenesis"
+                                            title="Прочесть значение термина «Антропогенез»">Антропогенез</a></li>
+                    <li><a href="https://proftest.me/term-apathy"
+                                            title="Прочесть значение термина «Апатия»">Апатия</a></li>
+                    <li><a href="https://proftest.me/term-apoplexy"
+                                            title="Прочесть значение термина «Апоплексия»">Апоплексия</a></li>
+                    <li><a href="https://proftest.me/term-arbitration"
+                                            title="Прочесть значение термина «Арбитраж»">Арбитраж</a></li>
+                    <li><a href="https://proftest.me/term-argot"
+                                            title="Прочесть значение термина «Арго»">Арго</a></li>
+                    <li><a href="https://proftest.me/term-aristotle"
+                                            title="Прочесть значение термина «Аристотель»">Аристотель</a></li>
+                    <li><a href="https://proftest.me/term-asimbolia"
+                                            title="Прочесть значение термина «Асимболия»">Асимболия</a></li>
+                    <li><a href="https://proftest.me/term-assertiveness"
+                                            title="Прочесть значение термина «Ассертивность»">Ассертивность</a></li>
+                    <li><a href="https://proftest.me/term-associationism-associative-psychology"
+                                            title="Прочесть значение термина «Ассоцианизм, ассоциативная психология»">Ассоцианизм,
+                        ассоциативная психология</a></li>
+                    <li><a href="https://proftest.me/term-association"
+                                            title="Прочесть значение термина «Ассоциация»">Ассоциация</a></li>
+                    <li><a href="https://proftest.me/term-astasia"
+                                            title="Прочесть значение термина «Астазия»">Астазия</a></li>
+                    <li><a href="https://proftest.me/term-asthenic-emotions"
+                                            title="Прочесть значение термина «Астенические эмоции»">Астенические
+                        эмоции</a></li>
+                    <li><a href="https://proftest.me/term-asthenic-type"
+                                            title="Прочесть значение термина «Астенический тип»">Астенический тип</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-attribution"
+                                            title="Прочесть значение термина «Атрибуция»">Атрибуция</a></li>
+                    <li><a href="https://proftest.me/term-causal-attribution"
+                                            title="Прочесть значение термина «Атрибуция каузальная»">Атрибуция
+                        каузальная</a></li>
+                    <li><a href="https://proftest.me/term-attractants"
+                                            title="Прочесть значение термина «Аттрактанты»">Аттрактанты</a></li>
+                    <li><a href="https://proftest.me/term-attractiveness"
+                                            title="Прочесть значение термина «Аттрактивность»">Аттрактивность</a></li>
+                    <li><a href="https://proftest.me/term-attraction"
+                                            title="Прочесть значение термина «Аттракция»">Аттракция</a></li>
+                    <li><a href="https://proftest.me/term-autism"
+                                            title="Прочесть значение термина «Аутизм»">Аутизм</a></li>
+                    <li><a href="https://proftest.me/term-autogenic-training"
+                                            title="Прочесть значение термина «Аутогенная тренировка»">Аутогенная
+                        тренировка</a></li>
+                    <li><a href="https://proftest.me/term-aphagia"
+                                            title="Прочесть значение термина «Афагия»">Афагия</a></li>
+                    <li><a href="https://proftest.me/term-aphasia"
+                                            title="Прочесть значение термина «Афазия»">Афазия</a></li>
+                    <li><a href="https://proftest.me/term-aphonia"
+                                            title="Прочесть значение термина «Афония»">Афония</a></li>
+                    <li><a href="https://proftest.me/term-affect"
+                                            title="Прочесть значение термина «Аффект»">Аффект</a></li>
+                    <li><a href="https://proftest.me/term-affect-of-inadequacy"
+                                            title="Прочесть значение термина «Аффект неадекватности»">Аффект
+                        неадекватности</a></li>
+                    <li><a href="https://proftest.me/term-affectation"
+                                            title="Прочесть значение термина «Аффектация»">Аффектация</a></li>
+                    <li><a href="https://proftest.me/term-affiliation"
+                                            title="Прочесть значение термина «Аффилиация»">Аффилиация</a></li>
+                    <li><a href="https://proftest.me/term-narzi-ach"
+                                            title="Прочесть значение термина «Ах, Нарцисс»">Ах, Нарцисс</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="Б"><span class="alfabet__list__name">Б</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-basal-emotions"
+                                            title="Прочесть значение термина «Базальные эмоции»">Базальные эмоции</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-balints-syndrome"
+                                            title="Прочесть значение термина «Балинта синдром»">Балинта синдром</a></li>
+                    <li><a href="https://proftest.me/term-bamping"
+                                            title="Прочесть значение термина «Бампинг»">Бампинг</a></li>
+                    <li><a href="https://proftest.me/term-bartlett-frederic-charles"
+                                            title="Прочесть значение термина «Бартлетт, Фредерик Чарлз»">Бартлетт,
+                        Фредерик Чарлз</a></li>
+                    <li><a href="https://proftest.me/term-bakhtin-mikhail-mikhailovich"
+                                            title="Прочесть значение термина «Бахтин, Михаил Михайлович»">Бахтин, Михаил
+                        Михайлович</a></li>
+                    <li><a href="https://proftest.me/term-vigilance"
+                                            title="Прочесть значение термина «Бдительность»">Бдительность</a></li>
+                    <li><a href="https://proftest.me/term-unconditioned-reflex"
+                                            title="Прочесть значение термина «Безусловный рефлекс»">Безусловный
+                        рефлекс</a></li>
+                    <li><a href="https://proftest.me/term-bernstein-nikolai-aleksandrovich"
+                                            title="Прочесть значение термина «Бернштейн, Николай Александрович»">Бернштейн,
+                        Николай Александрович</a></li>
+                    <li><a href="https://proftest.me/term-conversation"
+                                            title="Прочесть значение термина «Беседа»">Беседа</a></li>
+                    <li><a href="https://proftest.me/term-unconscious"
+                                            title="Прочесть значение термина «Бессознательное»">Бессознательное</a></li>
+                    <li><a href="https://proftest.me/term-bekhterev-vladimir-mikhailovich"
+                                            title="Прочесть значение термина «Бехтерев, Владимир Михайлович»">Бехтерев,
+                        Владимир Михайлович</a></li>
+                    <li><a href="https://proftest.me/term-binet-alfred"
+                                            title="Прочесть значение термина «Бине, Альфред»">Бине, Альфред</a></li>
+                    <li><a href="https://proftest.me/term-biological-clock"
+                                            title="Прочесть значение термина «Биологические часы»">Биологические
+                        часы</a></li>
+                    <li><a href="https://proftest.me/term-behaviorism"
+                                            title="Прочесть значение термина «Бихевиоризм»">Бихевиоризм</a></li>
+                    <li><a href="https://proftest.me/term-bluff"
+                                            title="Прочесть значение термина «Блеф»">Блеф</a></li>
+                    <li><a href="https://proftest.me/term-twin-studies"
+                                            title="Прочесть значение термина «Близнецовый метод»">Близнецовый метод</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-blonsky-pavel-petrovich"
+                                            title="Прочесть значение термина «Блонский, Павел Петрович»">Блонский, Павел
+                        Петрович</a></li>
+                    <li><a href="https://proftest.me/term-bozhovich-lidia-ilyinichna"
+                                            title="Прочесть значение термина «Божович, Лидия Ильинична»">Божович, Лидия
+                        Ильинична</a></li>
+                    <li><a href="https://proftest.me/term-ain-sensations"
+                                            title="Прочесть значение термина «Болевые ощущения»">Болевые ощущения</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-the-big-five"
+                                            title="Прочесть значение термина «Большая пятерка»">Большая пятерка</a></li>
+                    <li><a href="https://proftest.me/term-delusion"
+                                            title="Прочесть значение термина «Бред»">Бред</a></li>
+                    <li><a href="https://proftest.me/term-broadbent-donald-eric"
+                                            title="Прочесть значение термина «Бродбент, Дональд Эрик»">Бродбент, Дональд
+                        Эрик</a></li>
+                    <li><a href="https://proftest.me/term-brushlinsky-andrey-vladimirovich"
+                                            title="Прочесть значение термина «Брушлинский, Андрей Владимирович»">Брушлинский,
+                        Андрей Владимирович</a></li>
+                    <li><a href="https://proftest.me/term-bulimia-nervosa"
+                                            title="Прочесть значение термина «Булимия нервная»">Булимия нервная</a></li>
+                    <li><a href="https://proftest.me/term-bacon-francis"
+                                            title="Прочесть значение термина «Бэкон, Фрэнсис»">Бэкон, Фрэнсис</a></li>
+                    <li><a href="https://proftest.me/term-buhler-karl"
+                                            title="Прочесть значение термина «Бюлер, Карл»">Бюлер, Карл</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="В"><span class="alfabet__list__name">В</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-incentive-value"
+                                            title="Прочесть значение термина «Валентность»">Валентность</a></li>
+                    <li><a href="https://proftest.me/term-validity-of-test"
+                                            title="Прочесть значение термина «Валидность теста»">Валидность теста</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-validity-of-experiment"
+                                            title="Прочесть значение термина «Валидность эксперимента»">Валидность
+                        эксперимента</a></li>
+                    <li><a href="https://proftest.me/term-insiration"
+                                            title="Прочесть значение термина «Вдохновение»">Вдохновение</a></li>
+                    <li><a href="https://proftest.me/term-vegetative-nervous-system"
+                                            title="Прочесть значение термина «Вегетативная нервная система»">Вегетативная
+                        нервная система</a></li>
+                    <li><a href="https://proftest.me/term-leading-activity"
+                                            title="Прочесть значение термина «Ведущая деятельность»">Ведущая
+                        деятельность</a></li>
+                    <li><a href="https://proftest.me/term-wechsler-scales"
+                                            title="Прочесть значение термина «Векслера, шкалы»">Векслера, шкалы</a></li>
+                    <li><a href="https://proftest.me/term-verbal-arahasia"
+                                            title="Прочесть значение термина «Вербальная парафазия»">Вербальная
+                        парафазия</a></li>
+                    <li><a href="https://proftest.me/term-intrinsic-motivation"
+                                            title="Прочесть значение термина «Внутренняя мотивация»">Внутренняя
+                        мотивация</a></li>
+                    <li><a href="https://proftest.me/term-imlicit-seech"
+                                            title="Прочесть значение термина «Внутренняя речь»">Внутренняя речь</a></li>
+                    <li><a href="https://proftest.me/term-age"
+                                            title="Прочесть значение термина «Возраст»">Возраст</a></li>
+                    <li><a href="https://proftest.me/term-voluntarism"
+                                            title="Прочесть значение термина «Волюнтаризм»">Волюнтаризм</a></li>
+                    <li><a href="https://proftest.me/term-volition"
+                                            title="Прочесть значение термина «Воля»">Воля</a></li>
+                    <li><a href="https://proftest.me/term-imagination"
+                                            title="Прочесть значение термина «Воображение»">Воображение</a></li>
+                    <li><a href="https://proftest.me/term-education"
+                                            title="Прочесть значение термина «Воспитание»">Воспитание</a></li>
+                    <li><a href="https://proftest.me/term-ercetion"
+                                            title="Прочесть значение термина «Восприятие»">Восприятие</a></li>
+                    <li><a href="https://proftest.me/term-exressive-movements"
+                                            title="Прочесть значение термина «Выразительные движения»">Выразительные
+                        движения</a></li>
+                    <li><a href="https://proftest.me/term-higher-nervous-activity"
+                                            title="Прочесть значение термина «Высшая нервная деятельность»">Высшая
+                        нервная деятельность</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="Г"><span class="alfabet__list__name">Г</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-gender-role"
+                                            title="Прочесть значение термина «Гендерная роль»">Гендерная роль</a></li>
+                    <li><a href="https://proftest.me/term-genotype"
+                                            title="Прочесть значение термина «Генотип»">Генотип</a></li>
+                    <li><a href="https://proftest.me/term-hypertensive-type"
+                                            title="Прочесть значение термина «Гипертимный тип»">Гипертимный тип</a></li>
+                    <li><a href="https://proftest.me/term-hynosis"
+                                            title="Прочесть значение термина «Гипноз»">Гипноз</a></li>
+                    <li><a href="https://proftest.me/term-homosexuality"
+                                            title="Прочесть значение термина «Гомосексуализм»">Гомосексуализм</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="Д"><span class="alfabet__list__name">Д</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-daltonism"
+                                            title="Прочесть значение термина «Дальтонизм»">Дальтонизм</a></li>
+                    <li><a href="https://proftest.me/term-involuntary-and-voluntary-movements"
+                                            title="Прочесть значение термина «Движения, непроизвольные и произвольные»">Движения,
+                        непроизвольные и произвольные</a></li>
+                    <li><a href="https://proftest.me/term-deviant-behavior"
+                                            title="Прочесть значение термина «Девиантное поведение»">Девиантное
+                        поведение</a></li>
+                    <li><a href="https://proftest.me/term-deduction"
+                                            title="Прочесть значение термина «Дедукция»">Дедукция</a></li>
+                    <li><a href="https://proftest.me/term-delinquent"
+                                            title="Прочесть значение термина «Делинквент»">Делинквент</a></li>
+                    <li><a href="https://proftest.me/term-communication-deficit"
+                                            title="Прочесть значение термина «Дефицит общения»">Дефицит общения</a></li>
+                    <li><a href="https://proftest.me/term-activity"
+                                            title="Прочесть значение термина «Деятельность»">Деятельность</a></li>
+                    <li><a href="https://proftest.me/term-trust"
+                                            title="Прочесть значение термина «Доверие»">Доверие</a></li>
+                    <li><a href="https://proftest.me/term-achievement-motive"
+                                            title="Прочесть значение термина «Достижения, мотив»">Достижения, мотив</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-soul"
+                                            title="Прочесть значение термина «Душа»">Душа</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="Ж"><span class="alfabet__list__name">Ж</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-jargon"
+                                            title="Прочесть значение термина «Жаргон»">Жаргон</a></li>
+                    <li><a href="https://proftest.me/term-wish"
+                                            title="Прочесть значение термина «Желание»">Желание</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="З"><span class="alfabet__list__name">З</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-envy"
+                                            title="Прочесть значение термина «Зависть»">Зависть</a></li>
+                    <li><a href="https://proftest.me/term-defense-mechanism"
+                                            title="Прочесть значение термина «Защита, психологическая»">Защита,
+                        психологическая</a></li>
+                    <li><a href="https://proftest.me/term-health"
+                                            title="Прочесть значение термина «Здоровье»">Здоровье</a></li>
+                </ol>
+            </li>
+            <li class="flex alfabet__list__simbol" id="И"><span class="alfabet__list__name">И</span>
+                <ol class="alfabet__list__word">
+                    <li><a href="https://proftest.me/term-hierarchy-of-needs"
+                                            title="Прочесть значение термина «Иерархия потребностей»">Иерархия
+                        потребностей</a></li>
+                    <li><a href="https://proftest.me/term-ikigai"
+                                            title="Прочесть значение термина «Икигай»">Икигай</a></li>
+                    <li><a href="https://proftest.me/term-imulsivity"
+                                            title="Прочесть значение термина «Импульсивность»">Импульсивность</a></li>
+                    <li><a href="https://proftest.me/term-sexual-inversion"
+                                            title="Прочесть значение термина «Инверсия сексуальная»">Инверсия
+                        сексуальная</a></li>
+                    <li><a href="https://proftest.me/term-individuality"
+                                            title="Прочесть значение термина «Индивидуальность»">Индивидуальность</a>
+                    </li>
+                    <li><a href="https://proftest.me/term-intelligence"
+                                            title="Прочесть значение термина «Интеллект»">Интеллект</a></li>
+                    <li><a href="https://proftest.me/term-interest"
+                                            title="Прочесть значение термина «Интерес»">Интерес</a></li>
+                    <li><a href="https://proftest.me/term-introversion"
+                                            title="Прочесть значение термина «Интроверсия»">Интроверсия</a></li>
+                    <li><a href="https://proftest.me/term-introjection"
+                                            title="Прочесть значение термина «Интроекция»">Интроекция</a></li>
+                    <li><a href="https://proftest.me/term-intuition"
+                                            title="Прочесть значение термина «Интуиция»">Интуиция</a></li>
+                    <li><a href="https://proftest.me/term-infantilism"
+                                            title="Прочесть значение термина «Инфантилизм»">Инфантилизм</a></li>
+                </ol>
+            </li>
+        </ul>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container flex__between">
+
+        <div class="flex">
+            <div class="foot__logo column flex__between" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+                <p>© Proftest.me 2020 Все права защищены.</p>
+            </div>
+
+            <div class="foot__menu column">
+                <span class="foot__title">Меню</span>
+                <ul class="column flex__wrap" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Privacy</a>
+                        <meta itemprop="name" content="Privacy"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Cookies</a>
+                        <meta itemprop="name" content="Cookies"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Contact</a>
+                        <meta itemprop="name" content="Contact"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Test</a>
+                        <meta itemprop="name" content="Test"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Blog</a>
+                        <meta itemprop="name" content="Blog"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Maps</a>
+                        <meta itemprop="name" content="Maps"/>
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Notes</a>
+                        <meta itemprop="name" content="Notes"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot__app__wrap flex__wrap">
+            <div class="column">
+                <span class="foot__title">Приложение</span>
+                <div class="flex">
+                    <a href="#" class="foot__app flex__center">
+                        <img src="./images/app-store.png" alt="">
+                        App store
+                    </a>
+                    <a href="#" class="foot__app flex__center">
+                        <img src="./images/google.png" alt="">
+                        Google Play
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <span class="foot__title">Мы в соцсетях</span>
+                <div class="flex">
+                    <a href="" class="foot__soc"><img src="./images/odnokl.png" alt=""></a>
+                    <a href="" class="foot__soc"><img src="./images/vk.png" alt=""></a>
+                    <a href="" class="foot__soc"><img src="./images/viber.png" alt=""></a>
+                    <a href="" class="foot__soc"><img src="./images/facebook.png" alt=""></a>
+                    <a href="" class="foot__soc"><img src="./images/twitter.png" alt=""></a>
+                </div>
+            </div>
+            <ul id="menu-foot2" class="flex" role="menubar" itemscope=""
+                itemtype="https://schema.org/SiteNavigationElement">
+                <li class="current-menu-item"><span>Тесты от А до Я</span></li>
+                <li><a class="b-menu-link" title="Все ссылки сайта ProfTest.ME" href="https://proftest.me/sitemap"
+                       role="menuitem" itemprop="url">Карта сайта</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="/css/libs.min.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/slick.css">
+<link rel="stylesheet" href="/css/slick-theme.css">
+<link rel="stylesheet" href="/css/fontawesome.css">
+<link rel="stylesheet" href="/css/loader.css">
+<link rel="stylesheet" href="/css/main.min.css">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/jquery.lazy.js"></script>
+<script src="/js/common.js"></script>
+
+</body>
+</html>

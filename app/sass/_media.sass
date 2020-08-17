@@ -1,0 +1,378 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1550px)
+  .spot
+    opacity: 0.8
+    &__title
+      right: 0
+    &__1
+      left: 0
+@media only screen and (max-width: 1350px)
+  .spot
+    &__2, &__3, &__4, &__5, &__6, &__7
+      display: none
+  .cat__test__slider, .test__filter__slider
+    padding: 0 30px
+  .slick-arrow
+    width: 40px
+    height: 40px
+    &.slider__prev
+      left: -10px
+    &.slider__next
+      right: -10px
+  .home__desc__sect
+    ul
+      margin: 0 0 40px
+  .home__desc__text
+    img
+      margin: 0 40px 0 40px
+
+@media only screen and (max-width: 1170px)
+  .sale__item__list
+    justify-content: space-around
+  .head__pro__btn
+    span
+      display: none
+
+@media only screen and (max-width: 1150px)
+  .blog
+    &__list
+      &__big
+        justify-content: space-around
+        .figure
+          max-width: calc(50% - 20px)
+          min-width: 270px
+      &__small
+        .figure
+          max-width: calc(33% - 20px)
+@media only screen and (max-width: 992px)
+  footer
+    .container
+      flex-direction: column
+  .foot__app__wrap
+    margin-top: 20px
+    justify-content: flex-start
+  .my__hamburger
+    display: block
+    margin-left: 20px
+  header
+    position: relative
+  .head__nav
+    display: none
+    order: 2
+    width: 100%
+    margin-top: 10px
+    li
+      display: flex
+      margin-top: 10px
+  .js__full__menu
+    display: none
+  .head__form
+    margin-left: 0
+  .head__logo
+    margin-right: 0
+  .container__single
+    padding: 20px 0
+  .container__test
+    padding: 0
+  .test__single__center
+    padding: 0
+  .blog__single__img2
+    margin: 0px 0px 36px
+    span
+      margin-left: 0
+  .h2.book, h2.book
+    padding-left: 30px
+    &:before
+      left: 0
+  .title__img__wrap
+    .alfabet__form
+      position: static
+      margin-top: 20px
+      height: 52px
+      order: 0
+  .alfabet__single__wrap
+    margin-top: 0
+    ol, ul
+      li
+        padding-left: 30px
+        &:before
+          left: 0
+  .spot
+    &__title
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
+  .figure__filter__card
+    max-width: 100%
+  .sale__info__wrap
+    flex-direction: column
+  .sale__info__column
+    margin-right: 0
+    margin-bottom: 20px
+    min-width: auto
+  .acc__progress__wrap
+    flex-direction: column
+  .acc__progress__column:first-child
+    margin-right: 0
+    margin-bottom: 20px
+    width: 100%
+    min-width: 100%
+
+@media only screen and (max-width: 870px)
+  .blog
+    &__list
+      &__small
+        .figure
+          max-width: calc(50% - 20px)
+  .figure__test__similar
+    width: calc(50% - 10px)
+  .sale__order__full__price
+    flex-direction: column
+    margin-right: 0
+    align-items: flex-end
+    &:before
+      width: 100%
+      right: 0
+    & > span
+      margin-right: 0
+      margin-bottom: 20px
+@media only screen and (max-width: 767px)
+
+  .main
+    &__login
+      position: relative
+    &__wrap
+      max-width: 100%
+      margin-left: 35px
+  .sidebar
+    max-width: 100%
+    margin-right: 0
+    position: absolute
+    height: 100%
+    width: 100%
+    z-index: 10
+    right: calc(100% - 40px)
+    padding: 20px 40px 20px 20px
+    transition: right linear .5s
+    box-shadow: none
+    &.is-active
+      right: 0
+    .my__hamburger
+      display: block
+    &__scroll__sticky
+      .my__hamburger
+        right: -30px
+  header
+    padding: 10px 0
+
+  .head__form
+    width: 100%
+    margin-top: 10px
+    order: 1
+    input
+      width: 100%
+      height: 26px
+  .foot__nav
+    margin-top: 12px
+    ul
+      flex-direction: column
+      li
+        margin-right: 0
+        margin-top: 12px
+  .login__menu__wrap
+    right: -30px
+    top: calc(100% + 5px)
+  .breadcrumb__wrap
+    padding: 20px 0
+  .blog__single__wrap
+    ul
+      margin-left: 20px
+    ol
+      margin-left: 30px
+  .banner__img__wrap
+    padding: 40px 20px
+    flex-direction: column
+  .alfabet__list__name
+    margin-right: 20px
+  .alfabet__list__word li
+    margin-bottom: 10px
+  .home__desc__text
+    img
+      display: none
+  .home__desc__sect
+    ul
+      li
+        width: 100%
+  .test__single__title
+    padding: 20px
+    flex-direction: column
+    img
+      margin-top: 20px
+  .test__single__cat
+    margin-bottom: 15px
+
+@media only screen and (max-width: 660px)
+
+  .head__logo
+    img
+      width: 120px
+      margin-right: 10px
+  .title__img__wrap
+    padding: 0 10px
+    .column
+      margin: 20px 0 20px
+    p
+      width: auto
+  .h1
+    font-size: 48px
+    margin-bottom: 15px
+  .title__img__cat
+    margin-bottom: 20px
+  .blog__single__test
+    padding: 15px
+    flex-direction: column
+    img
+      margin-right: 0
+    .column
+      margin: 15px 0
+  #index__page
+    .title__img__wrap
+      padding: 40px 0
+      br
+        display: none
+  .spot
+    opacity: 0.6
+  .cat__test__column
+    margin: 0
+  .figure__cat__test
+    .fa-angle-right
+      font-size: 18px
+      padding: 6px 16px
+    .figure__count
+      font-size: 16px
+      margin-left: 10px
+    .figure__desc
+      padding: 10px
+      .h3
+        font-size: 16px
+  .banner__home__wrap
+    padding: 20px
+  .figure__test__similar
+    width: 100%
+  .test__single__result
+    span
+      font-size: 16px
+      &:nth-child(2)
+        padding: 6px 12px
+        margin: 0 5px 0 5px
+    .test__single__count
+      padding: 6px 12px
+
+@media only screen and (max-width: 580px)
+  .blog
+    &__list
+      &__big, &__small
+        justify-content: center
+        .figure
+          max-width: 370px
+@media only screen and (max-width: 520px)
+  .sale__item__wrap
+    width: 100%
+  .head__btn__wrap
+    & > *
+      margin-left: 10px
+      &:first-child
+        margin-left: 0
+  .my__hamburger
+    margin-left: 10px
+  footer
+    padding: 40px 0
+  .foot
+    &__app__wrap
+      flex-direction: column
+      max-width: 100%
+      flex-wrap: nowrap
+      & > .column:nth-child(2)
+        margin: 20px 0
+    &__logo
+      width: 200px
+      a
+        margin-right: 15px
+        padding-right: 15px
+      img
+        margin-right: 5px
+        width: 160px
+      p
+        margin-top: 20px
+        white-space: pre-wrap
+        padding-right: 30px
+    &__menu
+      li
+        min-width: 70px
+  .sub__menu
+    .container
+      flex-direction: column
+    &__banner
+      margin-top: 20px
+  .modal__auth__wrap, .modal__spam__wrap
+    width: 100%
+  .blog__single__back
+    margin-top: 20px
+  .title__img__wrap
+    .alfabet__form
+      width: 100%
+  .figure__filter__card
+    .figure__img
+      min-width: 100px
+    .figure__cat
+      font-size: 16px
+    .figure__title
+      font-size: 16px
+    .bg__l-orange
+      font-size: 16px
+      align-items: center
+  .home__desc__sect .h2 br
+    display: none
+  .home__desc__text
+    margin-bottom: 20px
+  .home__desc__sect
+    ul
+      li
+        padding: 15px
+        font-size: 14px
+        &:nth-child(2n)
+          padding-right: 100px
+          &:before
+            right: 5px
+        &:nth-child(2n - 1)
+          padding-left: 100px
+          &:before
+            left: 5px
+  .tabs__btn
+    font-size: 16px
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+@media only screen and (max-width: 380px)
+  /**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /**/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /**/
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /**/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /**/
+
