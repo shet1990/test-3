@@ -2156,7 +2156,7 @@ section
   &__list
     &__scroll
       width: 100%
-      overflow-x: scroll
+      overflow-x: auto
       margin-bottom: 60px
     &__wrap
       width: 1140px
@@ -2724,7 +2724,7 @@ section
       width: 100%
       max-width: 450px
       &__line
-        margin-bottom: 10px
+        margin-bottom: 20px
         font-size: 14px
         align-items: center
         font-weight: 600
@@ -2734,8 +2734,172 @@ section
           border: 1px solid $l-gray
           transition: $all3
           &:hover, &:focus
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+        .select__tab
+          width: 100%
+          color: $l-gray
+          border-radius: 10px
+          border: 1px solid $l-gray
+          transition: box-shadow linear 0.3s
+          background-color: #ffffff
+          &.is-active
+            color: $dark
+        .one__option
+          top: 100%
+          border-radius: 0px 0px 5px 5px
+          box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.2)
+          max-height: 180px
+          overflow-y: auto
+        .select__wrap
+          margin: 0
+          width: 265px
+          border-radius: 10px 10px 0 0
+          transition: $all3
+          &:hover
+            .select__tab
+              box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+          &.is-active
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+            &:hover
+              .select__tab
+                box-shadow: none
+        &.calendar
+          .select__tab
+            min-width: auto
+          .select__wrap
+            &:nth-child(1)
+              width: 50px
+              margin-right: 15px
+            &:nth-child(2)
+              width: 116px
+              margin-right: 15px
+            &:nth-child(3)
+              width: 70px
+    &__avatar
+      margin: 0 auto
+      width: 100%
+      max-width: 450px
+      margin-bottom: 40px
+      input
+        &[type="text"]
+          width: 265px
+          border-radius: 10px
+          border: 1px solid $l-gray
+          transition: $all3
+          align-self: center
+          font-weight: 600
+          font-size: 20px
+          &:hover, &:focus
             box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1)
+        &[type="file"]
+          position: absolute
+          top: 0
+          bottom: 0
+          right: 0
+          left: 0
+          opacity: 0
+          z-index: 2
+          cursor: pointer
+    &__alert
+      margin-top: 20px
+      padding: 20px
+      align-items: center
+      background-color: #fff7e7
+      border-radius: $radius
+      p
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 0
+      img
+        margin-left: 20px
+    &__delete
+      margin-top: 20px
+      font-size: 14px
+      text-decoration: underline
+      color: #ffb410
+      &:hover
+        text-decoration: underline
+        color: #ffb410
+    &__link
+      margin-bottom: 40px
+    &__password
+      &__link
+        margin-top: 20px
+        font-size: 14px
+        text-decoration: underline
+        color: #7e7e9a
+        &:hover
+          text-decoration: underline
+          color: #7e7e9a
+      &__wrap
+        margin-bottom: 40px
+        border-radius: $radius
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+        padding: 0px 20px 20px
+        display: none
+        .modal__auth__input
+          span
+            font-size: 14px
+          input
+            width: 220px
+            border-radius: 10px
+            font-size: 14px
+            height: 34px
+            transition: $all3
+            &:hover, &:focus
+              box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
+          .flex__between
+            margin-bottom: 0
+            align-items: center
+          &.pass__view
+            .pass__control
+              bottom: 9px
+#avatar
+  width: 95px
+  height: 95px
+  position: relative
+  overflow: hidden
+  img
+    width: 100%
+    border-radius: 100%
+  span
+    position: absolute
+    color: $orange
+    bottom: 17px
+    right: 0px
+    font-size: 14px
+    z-index: 1
 
+
+.acc__cabinet__form__line .one__option
+  &::-webkit-scrollbar
+    width: 8px
+    height: 24px
+.rating__list__scroll
+  &::-webkit-scrollbar
+    width: 24px
+    height: 8px
+.acc__cabinet__form__line .one__option, .rating__list__scroll
+  &::-webkit-scrollbar
+    background-color: transparent
+  &::-webkit-scrollbar-thumb
+    background-color: #f95e28
+    border-radius: 5px
+  &::-webkit-scrollbar-thumb:hover
+    background-color: #f95e28
+  /* Стрелки */
+  &::-webkit-scrollbar-button:vertical:start:decrement
+    background:  linear-gradient(120deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, #fff 40%, rgba(0, 0, 0, 0) 41%),linear-gradient(0deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: $gray
+  &::-webkit-scrollbar-button:vertical:end:increment
+    background: linear-gradient(300deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(60deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(180deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: $gray
+  &::-webkit-scrollbar-button:horizontal:start:decrement
+    background: linear-gradient(30deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(150deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(270deg, #fff 30%, rgba(0, 0, 0, 0) 31%)
+    background-color: $gray
+  &::-webkit-scrollbar-button:horizontal:end:increment
+    background: linear-gradient(210deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(330deg, #fff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(90deg, #fff 30%, rgba(0, 0, 0, 0) 31%)
+    background-color: $gray
 @import "media"
 // Always at the end
 

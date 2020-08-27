@@ -347,6 +347,7 @@ $(function() {
         } else {
             $(parent).addClass('is-active');
             $(parent).find('.select__hide').slideToggle();
+
         }
     });
 
@@ -360,6 +361,9 @@ $(function() {
         $(parent).find('input').val(value).change();
         $(this).addClass('is-active');
         $(this).parent().slideToggle();
+        if($(parent).parent().hasClass('acc__cabinet__form__line')){
+            $(parent).find('.select__tab').addClass('is-active');
+        }
     });
 
     $(document).on('click', function(e) {
@@ -479,6 +483,35 @@ $(function() {
     /* Удаление элемента таблицы */
     $('.sale__order__delete').on('click', function () {
         $(this).closest('.sale__order__item').detach();
+    });
+    /* Конец */
+
+    /* Загрузка файла */
+    $('#avatar input[type="file"]').on('change', function () {
+        var parent = $('#avatar'),
+            files = this.files;
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+
+            if (!file.type.startsWith('image/')){ continue }
+
+            var img = document.createElement("img");
+            $(parent).find('img').detach();
+            img.file = file;
+            $(parent).prepend(img);
+
+            var reader = new FileReader();
+            reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+            reader.readAsDataURL(file);
+        }
+    });
+    /* Конец */
+
+    /* Появление блока изменить пароль */
+    $('.acc__cabinet__password__link').on('click', function (e) {
+        e.preventDefault();
+        $('.acc__cabinet__password__wrap').slideToggle();
     });
     /* Конец */
 
